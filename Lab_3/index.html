@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <title>Mateusz Zalewski 19291</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+        <link href="css/style.css" rel="stylesheet">
+      </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" ariaexpanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+            <a class="navbar-brand" href="#"> 
+                <div id="logo">
+                    <div class="circle">
+                        <img class="logo" src="img/Shelby_logo.png" alt="logo">
+                    </div>
+                </div>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"> <a href="#main-page">Strona główna</a> </li>
+              <li> <a href="#gallery">Galeria</a> </li>
+              <li> <a href="#">Kontakt</a> </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <header>
+        <div class= "container">
+            <!--Slajdy-->
+            <div id="carouselID" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselID" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselID" data-slide-to="1"></li>
+                    <li data-target="#carouselID" data-slide-to="2"></li>
+                    <li data-target="#carouselID" data-slide-to="3"></li>
+                </ol>
+
+                <!--Zdjęcia-->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img class="slider" src="img/Mustang Classic.jpg" alt="Obraz_1">
+                        <div class="carousel-caption">Mustang Shelby Classic</div>
+                </div>
+                <div class="item">
+                    <img class="slider" src="img/Mustang Shelby Super Snake.jpg" alt="Obraz_2">
+                    <div class="carousel-caption">Mustang Shelby Super Snake</div>
+                </div>
+                <div class="item">
+                    <img class="slider" src="img/Mustang Shelby GT500 2013.jpg" alt="Obraz_3">
+                    <div class="carousel-caption">Mustang Shelby GT500 2013</div>
+                </div>
+                <div class="item">
+                    <img class="slider" src="img/Mustang Shelby GT500 2021.jpg" alt="Obraz_4">
+                    <div class="carousel-caption">Mustang Shelby GT500 2021</div>
+                </div>   
+            </div>
+        
+            <!--Opcje slajdu-->
+            <a class="left carousel-control" href="#carouselID" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Poprzedni</span>
+            </a>
+            <a class="right carousel-control" href="#carouselID" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Następny</span>
+            </a>
+        </div>
+    </div>
+    </header>
+
+    <!--Część_1-->
+    <section id="main-page" class="jumbotron">
+        <div class="container">
+            <h1>Mustang Shelby</h1>
+            <p>
+                The Shelby Mustang is a high-performance variant of the Ford Mustang which was built by Shelby American from 1965 to 1967, and from 1968 to 1970 by Ford.
+                Following the introduction of the fifth generation Ford Mustang in 2005, the Shelby nameplate was revived as a new high-performance model, this time designed and built by Ford.
+            </p>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h1 class="text-primary">Museum</h1>
+            <p class="text-info">
+                In May 2016, the Mustang Owner's Museum was announced, with an official opening in Concord, North Carolina on April 17, 2019; the fifty-fifth anniversary.
+                The decision to locate somewhere in Concord was a result of the success of the 2014 Mustang 50th-anniversary celebration at Charlotte Motor Speedway in Concord, with over 
+                4,000 Mustangs registered and an estimated economic impact of US$8,300,000.
+            </p>
+        </div>
+    </section>
+
+    <!--Część_2-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 text-center">
+                <img src="img/New_York.jpg" class="img-circle center-block" alt="New_York" height=175 width=175>
+                <h3 class="text-success" >New York</h3>
+            </div>
+            <div class="col-sm-4 text-center">
+                <img src="img/Virginia.jpg" class="img-circle center-block" alt="Virginia" height=200 width=200>
+                <h3 class="text-success">Virginia</h3>
+            </div>
+            <div class="col-sm-4 text-center">
+                <img src="img/North_Carolina.jpg" class="img-circle center-block" alt="North_Carolina" height=175 width=175>
+                <h3 class="text-success">North Carolina</h3>
+            </div>
+        </div> 
+    </div>
+
+    <!--Stopka-->
+    <footer>
+        <div class="container">
+            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                Polityka prywatności
+            </button>
+        </div>
+    </footer>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span ariahidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Polityka prywatności</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        PLEASE READ THE FOLLOWING TERMS AND CONDITIONS OF USE CAREFULLY BEFORE USING THIS WEBSITE. All users of this site agree that access to and use of this site are subject 
+                        to the following terms and conditions and other applicable law. If you do not agree to these terms and conditions, please do not use this site.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
