@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 8</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--Zadanie 1/2-->
+    <script>
+        $(document).ready(function(){
+        $("#ukryj").click(function(){
+        $("#p_kryj").hide();
+        });
+        $("#p1").hover(function(){
+        alert("J. Kochanowski");
+        });
+        });
+    </script>
+
+    <!--Zadanie 3-->
+    <script>
+        $(document).ready(function(){
+        $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+        });
+        });
+    </script>
+    <style>
+        #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+
+    <!--Zadanie 4-->
+    <script>
+        $(document).ready(function(){
+        $("#btn1").click(function(){
+        $("ol").append("<p>Dodatkowy element listy</p>");
+        });
+        });
+    </script>
+    
+    <!--Zadanie 5-->
+    <script>
+        $(document).ready(function(){
+        $("#modify").click(function(){
+        $("h2").addClass("brown");
+        $("h1").addClass("dark-green");
+        $("p").addClass("dark-blue");
+        $("div").addClass("important");
+        });
+        });
+    </script>
+    <style>
+        .important {
+            font-weight: bold;
+            font-size: xx-large;
+        }
+        .brown {
+            color: brown;
+        }
+        .dark-green {
+            color: darkgreen;
+        }
+        .dark-blue {
+            color: darkblue;
+        }
+    </style>
+
+    <!--Zadanie 6-->
+    <script>
+        $( function() {
+        $( "#datepicker" ).datepicker();
+        } );
+    </script>
+
+    <script>
+        $( function() {
+        $( "#tabs" ).tabs();
+        } );
+    </script>
+
+    <script>
+        $( function() {
+        $( "#dialog" ).dialog();
+        } );
+    </script>
+</head>
+<body>
+    <!--Zadanie 1/2-->
+    <h2>Gdzie są fraszki?</h2>
+    <p id="p_kryj">Że krótkie fraszki czynię, to, Jakubie, winisz?</p>
+    <button id="ukryj">Ukryj</button>
+
+    <!--Zadanie 3-->
+    <div id="flip">Dodatkowe opcje...</div>
+    <div id="panel">Rozwinąłeś panel dodatkowych ściśle tajnych opcji.</div>
+
+    <!--Zadanie 4-->
+    <p>Uzupełnianie listy dodatkowym kontentem</p>
+    <ol>
+        <li>Element listy 1</li>
+        <li>Element listy 2</li>
+        <li>Element listy 3</li>
+    </ol>
+    <button id="btn1">Dodaj do listy</button>
+
+    <!--Zadanie 5-->
+    <h1>Nagłówek 1</h1>
+    <h2>Nagłówek 2</h2>
+    <p>Wiersz tesktu.</p>
+    <p>Kolejny wiersz tekstu.</p>
+    <div>To jest tekst specjalny, ani wiersz ani nagłówek</div><br>
+    <button id="modify">Modyfikuj</button>
+
+    <!--Zadanie 6-->
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Zakładka 1</a></li>
+            <li><a href="#tabs-2">Zakładka 2</a></li>
+            <li><a href="#tabs-3">Zakładka 3</a></li>
+        </ul>
+        <div id="tabs-1">
+            <p>Wyłącznie tekst</p>
+        </div>
+        <div id="tabs-2">
+            <p>Tekst oraz pole do wpisywania daty:</p>
+            <p>Data: <input type="text" id="datepicker"></p>
+        </div>
+        <div id="tabs-3">
+            <p>Tekst umieszczony w oknie dialogowym</p>
+            <div id="dialog" title="Tekst w oknie">
+                <p>Przykładowy tekst</p>
+            </div>
+        </div>  
+    </div>
+</body>
+</html>
