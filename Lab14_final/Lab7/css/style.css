@@ -1,0 +1,84 @@
+*{
+    padding: 0px;
+    margin:0px;
+}
+
+body
+{
+    font-family: 'Imbue', serif;
+    font-size:18px;
+    color: #ffffff;
+    background: #000000;
+}
+
+.logo
+{
+    width: 20px;
+    height: 30px;
+    margin: 0px 20px 0px 0px;
+    display: block;
+    flex: 1;
+}
+
+.circle
+{
+    width:30px;
+    height:30px;
+    border-radius:50px;
+    font-size:20px;
+    line-height:100px;
+    text-align:center;
+    background:#000
+}
+
+.ad
+{
+    background-color:black;
+}
+
+.colors
+{
+	background-color: #b6b3b3;
+}
+
+.slider
+{
+    width:1080px;
+    height: 1920px;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Texturina', serif;
+}
+
+.navbar-inverse .nav li a .glyphicon 
+{
+    color: darkred;
+}
+
+#glyph
+{
+    color: darkred;
+}
+
+#header
+{
+    font-family: 'Texturina', serif;
+    color: rgb(77, 77, 216);
+}
+
+#txt
+{
+    font-family: 'Imbue', serif;
+    color: rgb(61, 61, 185);
+}
+
+@media screen and (max-width: 767px)
+{
+    .sidenav
+    {
+        height: auto;
+    }
+    .row.content {height:auto;} 
+}
